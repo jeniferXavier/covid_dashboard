@@ -65,7 +65,7 @@ def chart_card(render_fn):
 # ============================================================
 @st.cache_data
 def load_data():
-    df_ = pd.read_excel("cleaned_COVID_Survey.xlsx")
+    df_ = pd.read_excel("COVID_Survey_DS.xlsx")
     df_.columns = df_.columns.str.strip().str.replace(" ", "_")
     return df_
 
